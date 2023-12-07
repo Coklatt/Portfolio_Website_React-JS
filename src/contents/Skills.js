@@ -1,25 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Skills extends Component {
-    constructor(props) {
+    constructor(props)
+    {
         super(props);
-        this.state = {
-            myskills: ['Javascript', 'PHP', 'Python', 'NodeJs', 'CI/CD'],
+        this.state={
+            'myskills':['HTML','CSS','JS','PHP','REACT JS','FIREBASE','MIT APP']
         };
     }
 
     render() {
         return (
             <div className="condiv skills">
-                <h1 className="subtopic">My Skills</h1>
-                <ul>
-                    {this.state.myskills.map((value) => {
-                        return <li>{value}</li>;
-                    })}
-                </ul>
+            <h1 className="subtopic">My Skills</h1>
+            <ul>
+            {this.state.myskills.map((value)=>{
+                return <li>{value}</li>
+            })}
+            </ul>
             </div>
-        );
+            )
+        }
     }
-}
-
-export default Skills;
+    
+    export default Skills
+    
